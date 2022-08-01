@@ -1,10 +1,10 @@
 import { Router } from "express";
 
-import CartsController from "./controllers/CartsController";
+import CartsController from "./controllers/CartsController.js";
 
-import ProductController from "./controllers/ProductController";
+import ProductController from "./controllers/ProductController.js";
 
-import MensagemController from "./controllers/MensagemController";
+import MensagemController from "./controllers/MensagemController.js";
 
 const routes = new Router();
 

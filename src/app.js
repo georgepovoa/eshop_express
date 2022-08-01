@@ -2,12 +2,15 @@ import express from "express"
 
 import cors from "cors"
 
-import routes from "./routes";
+import routes from "./routes.js";
 
-import './database'
+import './database/index.js'
 
-const swaggerUi = require('swagger-ui-express')
-const swaggerFile = require('../swagger_output.json')
+// import swaggerUi from "swagger-ui-express"
+// import swaggerFile from "../swagger_output.json"
+
+// const swaggerUi = require('swagger-ui-express')
+// const swaggerFile = require('../swagger_output.json')
 
 class App{
     constructor(){
@@ -25,7 +28,6 @@ class App{
 
     routes(){
         this.server.use(routes)
-        this.server.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
     }
 }

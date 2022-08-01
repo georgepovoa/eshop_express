@@ -1,4 +1,4 @@
-import Mensagem from "../models/Mensagem";
+import Mensagem from "../models/Mensagem.js";
 
 import { v4 as uuidv4 } from 'uuid';
 
